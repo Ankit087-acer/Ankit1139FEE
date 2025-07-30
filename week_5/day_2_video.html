@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+<style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #333;
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #e0d9d9;
+    }
+
+    video {
+      width: 80%;
+      max-width: 720px;
+      border: 5px solid #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+</style>
+<body>
+    <div class="container">
+       <video width="400" loop controls poster="thumbnail.avif">
+        <source src="video.mp4"  >
+        <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English">
+    </video> 
+    </div>
+    
+</body>
+</html>

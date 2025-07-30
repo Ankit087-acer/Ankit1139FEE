@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Media Section</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-top: 1rem;
+    }
+
+    section {
+      margin-top: 2rem;
+    }
+
+    video, audio, iframe, object {
+      display: block;
+      width: 100%;
+      max-width: 800px;
+      margin: 1rem auto;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    @media (max-width: 767px) {
+      audio {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My Multimedia Portfolio Section</h1>
+    <section>
+      <h2>Project Showcase Video</h2>
+      <video width="400" controls loop poster="thumbnail.avif">
+        <source src="video.mp4" type="video/mp4">
+        <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+    <section>
+      <h2>Background Music</h2>
+      <audio controls autoplay loop muted preload="metadata">
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+    <section>
+      <h2>Office Location</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.293878905747!2d-122.41941548467814!3d37.774929779759204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c2e1f7a6b%3A0x62f8490f4185144f!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1616144067921!5m2!1sen!2sus" 
+        width="600" height="400" allowfullscreen>
+      </iframe>
+    </section>
+    <section>
+      <h2>Resume</h2>
+      <object data="Function Overloading.pdf" type="application/pdf" width="600" height="500">
+      </object>
+    </section>
+  </div>
+</body>
+</html>
