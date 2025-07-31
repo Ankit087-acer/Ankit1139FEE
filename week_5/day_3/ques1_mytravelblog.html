@@ -1,31 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My travel blog</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Travel Blog</title>
 </head>
 <style>
-    nav div{
-        display:flex;
-        justify-content: space-between;
-        align-items: center;
-        
-    }
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #0275d8;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #0275d8;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+blockquote {
+  margin-top: 20px;
+  font-style: italic;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-left: 5px solid #0275d8;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  padding: 8px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.checkboxes,
+.radio-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+button {
+  background-color: #0275d8;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+button:hover {
+  background-color: #025aa5;
+}
+
+footer {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  margin-top: 40px;
+}
+
 </style>
 <body>
-       <nav>
-          <h1>My Travel Blog</h1>
-          <div>
-            <ul >
-                <li>Home</li>
-          <li>About</li>
-          <li>Destination</li>
-          <li>Contact</li>
-            </ul>
-             
-          </div>
-         
-       </nav>
+  <header>
+    <h1>My Travel Blog ✈</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Stories</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Welcome to My Travel Adventures!</h2>
+      <p>
+        Join me on an incredible journey around the world as I explore breathtaking destinations, discover hidden gems, and share unforgettable experiences.
+        From bustling city streets to serene mountain peaks, every adventure tells a story worth sharing. Let's explore the world together, one destination at a time!
+      </p>
+    </section>
+
+    <section class="destinations">
+      <h2>🌍 Top 3 Travel Destinations</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Country</th>
+            <th>Best Time to Visit</th>
+            <th>Language</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>🇯🇵 Japan</td>
+            <td>March - May (Spring)</td>
+            <td>Japanese</td>
+          </tr>
+          <tr>
+            <td>🇮🇸 Iceland</td>
+            <td>June - August (Summer)</td>
+            <td>Icelandic</td>
+          </tr>
+          <tr>
+            <td>🇵🇪 Peru</td>
+            <td>May - September (Dry Season)</td>
+            <td>Spanish, Quechua</td>
+          </tr>
+        </tbody>
+      </table>
+      <blockquote>“The world is a book and those who do not travel read only one page.” – Saint Augustine</blockquote>
+    </section>
+
+    <section class="video">
+      <h2>🎥 My Latest Adventure</h2>
+      <video width="480" controls>
+        <source src="adventure.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section class="form-section">
+      <h2>✉ Plan Your Next Adventure</h2>
+      <form>
+        <label>Full Name:
+          <input type="text" name="fullname" />
+        </label>
+
+        <label>Destination Interest:
+          <select name="destination">
+            <option value="africa">Africa</option>
+            <option value="asia">Asia</option>
+            <option value="europe">Europe</option>
+          </select>
+        </label>
+
+        <label>Travel Interests:</label>
+        <div class="checkboxes">
+          <label><input type="checkbox" name="interest" /> Adventure</label>
+          <label><input type="checkbox" name="interest" /> Culture</label>
+          <label><input type="checkbox" name="interest" /> Food</label>
+          <label><input type="checkbox" name="interest" /> Photography</label>
+        </div>
+
+        <label>Type of Traveler:</label>
+        <div class="radio-buttons">
+          <label><input type="radio" name="type" /> Solo Traveler</label>
+          <label><input type="radio" name="type" /> Couple</label>
+          <label><input type="radio" name="type" /> Family</label>
+          <label><input type="radio" name="type" /> Group</label>
+        </div>
+
+        <label>Email ID:
+          <input type="email" name="email" />
+        </label>
+
+        <button type="submit">Submit Travel Plans 🚀</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 My Travel Blog. All rights reserved. Made with ❤ for fellow travelers.</p>
+  </footer>
 </body>
 </html>
