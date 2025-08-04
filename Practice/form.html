@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form</title>
+  <style>
+    .form-container {
+      padding-left: 500px;
+      margin-top: 50px;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    td {
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <form>
+      <table border="1">
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td><input type="text" id="name" name="name" required></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+          <td><label for="phone">Phone No:</label></td>
+          <td><input type="number" id="phone" name="phone" required></td>
+        </tr>
+        <tr>
+          <td><label for="dob">DOB:</label></td>
+          <td><input type="date" id="dob" name="dob" required></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+</html>
