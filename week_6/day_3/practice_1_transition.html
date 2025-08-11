@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height:150px;
+            width:75px;
+            background-color: red;
+            animation-name: anim1;
+            animation-timing-function: ease-in-out;
+            animation-duration: 5s;
+            animation-iteration-count: 6;
+
+        }
+        @keyframes anim1{
+            0%{
+                transform: rotatex(45deg);
+                padding-left: 0;
+            }
+            50%{
+                transform: rotateX(90deg) translate(45deg,45deg) scale(3);
+                background-image: linear-gradient(yellow);
+                padding-left: 450px;
+            }
+            100%{
+                transform: rotateX(135deg) translate(90deg,67deg) scale(6);
+                padding-left: 1200px;
+                background-image: radial-gradient(green);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
