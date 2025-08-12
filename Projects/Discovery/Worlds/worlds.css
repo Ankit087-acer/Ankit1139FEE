@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul {
+    color: rgba(243, 237, 237, 0.962);
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: black; /* Changed to black */
+}
+
+header {
+    height: 500px;
+    position: relative;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo img {
+    height: 40px;
+    filter: brightness(0) invert(1); /* Makes logo white */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li {
+    position: relative;
+    font-weight: 500;
+    cursor: pointer;
+    color: white; /* Ensures nav text is visible */
+}
+
+.nav-links li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-links li:hover::after {
+    width: 100%;
+}
