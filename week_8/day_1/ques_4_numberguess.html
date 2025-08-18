@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing</title>
+</head>
+<body>
+       <script>
+             let random=parseInt(prompt("Enter the Random number: "))
+             let i=1
+             while(i<=3){
+                let user=parseInt(prompt("Enter the User number"))
+                if(random<user){
+                    console.log("Bigger number")
+                   break;
+                }
+                else if(random>user){
+                    console.log("Smaller number")
+                    break;
+                    
+                }
+                else{
+                    console.log("Correct")
+                    break;
+                }
+             }
+       </script>
+</body>
+</html>
